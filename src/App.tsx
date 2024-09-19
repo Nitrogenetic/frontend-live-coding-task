@@ -1,9 +1,9 @@
-import './App.css';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Root } from './view/components/root';
-import { ProductPage } from './view/components/product-page';
-import { Provider } from 'react-redux';
-import { store } from './store';
+import './App.css'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { Root } from './view/components/root'
+import { ProductPage } from './view/components/product-page'
+import { Provider } from 'react-redux'
+import { store } from './services/store'
 
 const router = createBrowserRouter([
   {
@@ -14,14 +14,14 @@ const router = createBrowserRouter([
     path: '/products/:productId',
     element: <ProductPage />,
   },
-]);
+])
 
 function App() {
   return (
     <Provider store={store}>
       <RouterProvider router={router} />
     </Provider>
-  );
+  )
 }
 
-export default App;
+export default App

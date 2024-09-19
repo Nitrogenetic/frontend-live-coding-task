@@ -1,0 +1,38 @@
+.main-product-compare-block {
+  gap: 10px;
+  display: flex;
+}
+
+.main-product {
+  border: dashed 1px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.compare-products {
+  gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.compare-product {
+  position: relative;
+  border: dashed 1px;
+  padding: 0 10px;
+  min-width: 150px;
+  flex-grow: 1;
+}
+
+.compare-products-title {
+  position: absolute;
+  top: 0;
+}
+
+.remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}

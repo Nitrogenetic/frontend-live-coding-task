@@ -2,7 +2,7 @@
  * Категория
  */
 export interface Category {
-  id: string;
-  name: string;
-  children?: Category[];
+  id: string
+  name: string
+  children?: Category[]
 }
