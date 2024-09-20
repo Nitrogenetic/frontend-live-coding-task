@@ -10,7 +10,6 @@ const INIT_MODAL = { product: undefined, isOpen: false }
 
 export const ProductPage: FC = () => {
   const [modalState, setModalState] = useState<ModalState>(INIT_MODAL)
-  console.log('modalState: ', modalState)
   const { detailProduct } = useDetailProduct()
   const { comparison, addProductToCompare, removeProductFromCompare } = useComparison()
 
